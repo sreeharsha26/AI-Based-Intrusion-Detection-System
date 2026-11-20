@@ -1,0 +1,56 @@
+{
+  "dataset": "NSL-KDD training file supplied by user",
+  "records": 125973,
+  "features": [
+    "protocol_type",
+    "src_bytes",
+    "dst_bytes",
+    "count"
+  ],
+  "target_definition": "0 = normal; 1 = any non-normal attack label",
+  "test_size": 0.25,
+  "random_state": 42,
+  "accuracy": 0.978916619038547,
+  "classification_report": {
+    "Normal": {
+      "precision": 0.9709925442684063,
+      "recall": 0.9901401758137325,
+      "f1-score": 0.9804728855428773,
+      "support": 16836.0
+    },
+    "Attack": {
+      "precision": 0.9884126762529666,
+      "recall": 0.9660253786328284,
+      "f1-score": 0.9770908087220536,
+      "support": 14658.0
+    },
+    "accuracy": 0.978916619038547,
+    "macro avg": {
+      "precision": 0.9797026102606865,
+      "recall": 0.9780827772232805,
+      "f1-score": 0.9787818471324654,
+      "support": 31494.0
+    },
+    "weighted avg": {
+      "precision": 0.9791002566780616,
+      "recall": 0.978916619038547,
+      "f1-score": 0.9788987926350333,
+      "support": 31494.0
+    }
+  },
+  "confusion_matrix_labels": [
+    "Normal",
+    "Attack"
+  ],
+  "confusion_matrix": [
+    [
+      16670,
+      166
+    ],
+    [
+      498,
+      14160
+    ]
+  ],
+  "important_limitation": "Random stratified holdout from the supplied training file; this is not an independent NSL-KDD test-set evaluation. Live packet-derived features are approximations and require validation."
+}
